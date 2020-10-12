@@ -104,3 +104,14 @@ dist
 .tern-port
 
 .idea/
+
+.vscode
+.idea
+node_modules
+.DS_Store
+/node_modules
+.csv
+.json
+*-spec.js
+/spec
+*.gitignore
