@@ -14,10 +14,12 @@ class SodaMachine {
   }
 
   findSoda(sodaBrand) {
-    for (let i =0; i < this.sodas.length; i++){
-      if (sodaBrand == this.sodas[i].brand)
-        return this.sodas[i]
-    }
+   return this.sodas.find(e => e.brand == sodaBrand);
+    //
+    // for (let i = 0; i < this.sodas.length; i++){
+    //   if (sodaBrand == this.sodas[i].brand)
+    //     return this.sodas[i]
+    // }
 
   }
 
@@ -39,12 +41,12 @@ class SodaMachine {
 //   let secondPepsi;
 //   let sodaMachine;
 //
-//   pepsi = new Soda({ brand: 'Pepsi', price: 0.65 });
-//   mountainDew = new Soda({ brand: 'Mountain Dew', price: 0.75 });
+//   печенье 1 = new Soda({ brand: 'Шоколадное', время выпечки: 0.65 });
+//   печенье2 = new Soda({ brand: 'Ореховое', время выпечки: 0.75 });
 //   cokeZero = new Soda({ brand: 'Coke Zero', price: 1.0 });
 //   secondPepsi = new Soda({ brand: 'Pepsi', price: 0.65 });
 //   sodaMachine = new SodaMachine({
-//     sodas: [pepsi, mountainDew, cokeZero, secondPepsi],
+//     партия: [печенте1, печенье2 cokeZero, secondPepsi],
 //     cash: 1.0,
 //   })
 // //
